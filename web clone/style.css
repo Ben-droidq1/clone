@@ -1,0 +1,162 @@
+body{
+    background-color: black;
+    font-family:cursive;
+    color: aliceblue;
+    text-align: left;
+    position: absolute;
+    top: 200px;
+    background-image: url(diver_flippers_depth_166293_1920x1080.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 15px;
+
+    
+}
+p{
+    color: rgb(145, 143, 143);
+    
+}
+.flexbox{
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+    
+}
+.blue{
+    height: 40px;
+    width: 150px;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    color: aliceblue;
+     transition: transform 0.2s;
+}
+
+.black{
+     height: 40px;
+    width: 150px;
+    background-color: rgb(67, 67, 77);
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    color: aliceblue;
+     transition: transform 0.2s;
+}
+.blue:active{
+    transform: scale(0.9);
+}
+.black:active{
+    transform: scale(0.9);
+}
+.prod{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+.prod p{
+    color: rgb(145, 143, 143);
+}
+.end{
+    text-align: center;
+}
+.card{
+    height: 470px;
+    width: 300px;
+    background-color: rgb(26, 25, 25);
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+.card hr {
+    width: 270px;
+}
+.card li{
+    list-style-type:georgian;
+
+}
+.card button{
+    width: 270px;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    color: aliceblue;
+    position: absolute;
+    left: 15px;
+    transition: transform 0.2s;
+
+
+
+}
+.card button:active{
+    transform: scale(0.9);
+}
+.card p{
+    font-size: 50px;
+    color: aliceblue;
+
+}
+
+
+.foot{
+    width: 95%;
+    background-color: black;
+    height: 150px;
+    padding: 15px;
+    border-radius: 7px;
+    display: flex;
+    margin: 0 auto ;
+    align-items: center;
+    gap: 30px;
+    
+    
+}
+
+.foot button{
+    background-color: blue;
+    border: none;
+    border-radius: 2px;
+    height: 40px;
+    color: aliceblue;
+    
+}
+
+
+
+.foot button:active{
+    transform: scale(0.9);
+}
+.back ul{
+    list-style-type: none;
+    overflow: hidden;
+    padding: 7px;
+    
+}
+.back li{
+padding: 10px;    
+    
+}
+@media (max-width:600px){
+    .flexbox{
+        flex-direction: column;
+        gap: 15px;
+    }
+    .prod{
+        flex-direction: column;
+    }
+    .foot{
+        flex-wrap: wrap;
+        height: 200px;
+    }
+    .foot button{
+        justify-content: center;
+    }
+    body{
+        top: 10px;
+    }
+}
